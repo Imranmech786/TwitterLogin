@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.imran.fyndtestapp"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "TWITTER_API_KEY", "\"i4CJz3W9voaeNjkTo0sQrn4vu\"")
+        buildConfigField("String", "TWITTER_SECRET_KEY_API_KEY", "\"C6I0GwGpGNluyOzUs4yEYxju77la7ulftuxa4qXnNlogipp9GC\"")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "TWITTER_API_KEY", "\"i4CJz3W9voaeNjkTo0sQrn4vu\"")
+            buildConfigField("String", "TWITTER_SECRET_KEY_API_KEY", "\"C6I0GwGpGNluyOzUs4yEYxju77la7ulftuxa4qXnNlogipp9GC\"")
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:' + rootProject.ext.supportLibrary
+    implementation 'com.android.support:design:' + rootProject.ext.supportLibrary
+    implementation 'com.android.support:support-v4:' + rootProject.ext.supportLibrary
+    //    Arch dependancies
+    implementation "android.arch.persistence.room:runtime:$roomDbVersion"
+    annotationProcessor "android.arch.persistence.room:compiler:$roomDbVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$roomDbVersion"
+
+    implementation "com.google.firebase:firebase-auth:$firebaseAuth"
+    implementation "com.google.firebase:firebase-core:$firebaseCore"
+    implementation "com.twitter.sdk.android:twitter-core:$twitterVersion"
+    implementation "com.twitter.sdk.android:twitter:$twitterVersion"
+    implementation "com.facebook.fresco:fresco:$frescoVersopn"
+
+}
+
+
+

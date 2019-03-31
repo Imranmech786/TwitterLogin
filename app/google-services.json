@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "956033448611",
+    "firebase_url": "https://twitterapp-1751e.firebaseio.com",
+    "project_id": "twitterapp-1751e",
+    "storage_bucket": "twitterapp-1751e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956033448611:android:15361b50e49ec471",
+        "android_client_info": {
+          "package_name": "com.imran.fyndtestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956033448611-qkpl0rmpueu1ed845elhjjld4do73lo4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg5ytkD-PlD-KXRyC4Pj9XGxcf7mQ8JlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

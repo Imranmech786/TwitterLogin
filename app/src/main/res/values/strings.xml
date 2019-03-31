@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FyndTestApp</string>
+    <string name="sign_in_failed">Sign in Failed</string>
+    <string name="check_internet_connection">Check your Internet Connection</string>
+    <string name="retry">Click To Retry</string>
+    <string name="no_feeds_found">No Feeds Found</string>
+    <string name="log_out">Log Out</string>
+    <string name="login_with_twitter">Login with Twitter</string>
+</resources>
