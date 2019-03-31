@@ -238,7 +238,7 @@ public class MainActivity extends AppCompatActivity implements MenuItem.OnMenuIt
 
     protected void setUpActionBar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Fynd Test App");
+        toolbar.setTitle(getString(R.string.app_name));
         ViewCompat.setElevation(toolbar, getResources().getDimension(R.dimen._3dp));
         toolbar.setTitleTextColor(getResources().getColor(R.color.toolbar_title));
         setSupportActionBar(toolbar);

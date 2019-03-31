@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FyndTestApp</string>
+    <string name="app_name">Twitter Feeds</string>
     <string name="sign_in_failed">Sign in Failed</string>
     <string name="check_internet_connection">Check your Internet Connection</string>
     <string name="retry">Click To Retry</string>
